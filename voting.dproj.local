@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.298,C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\GIT\studrada\mainform.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.713,=C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.298,C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\GIT\studrada\mainform.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.838,C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\GIT\studrada\voting.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.621,D:\GIT\studrada\Unit2.pas=D:\GIT\studrada\configform.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.242,=D:\GIT\studrada\Unit2.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.667,=C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019.10.29 18:33:43.713,=C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019.10.29 18:40:57.298,D:\GIT\studrada\mainform.pas=C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019.10.29 18:40:57.298,D:\GIT\studrada\mainform.dfm=C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2019.10.29 18:41:56.838,D:\GIT\studrada\voting.dproj=C:\Users\Виктор\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.621,D:\GIT\studrada\Unit2.dfm=D:\GIT\studrada\configform.dfm</Transaction>
   </Transactions>
 </BorlandProject>

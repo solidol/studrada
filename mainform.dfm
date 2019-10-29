@@ -1,8 +1,8 @@
-object Form1: TForm1
+object fmMain: TfmMain
   Left = 0
   Top = 0
   BorderStyle = bsNone
-  Caption = 'Form1'
+  Caption = 'fmMain'
   ClientHeight = 513
   ClientWidth = 722
   Color = clGradientActiveCaption
@@ -21,7 +21,7 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 80
     Top = 112
-    Width = 457
+    Width = 106
     Height = 39
     Caption = 'Label1'
     Font.Charset = DEFAULT_CHARSET
@@ -45,7 +45,7 @@ object Form1: TForm1
     DesignSize = (
       722
       81)
-    object Panel1: TPanel
+    object bbConfigure: TPanel
       Left = 15
       Top = 15
       Width = 209
@@ -60,8 +60,9 @@ object Form1: TForm1
       ParentBackground = False
       ParentFont = False
       TabOrder = 0
+      OnClick = bbConfigureClick
     end
-    object Panel2: TPanel
+    object bbClose: TPanel
       Left = 656
       Top = 15
       Width = 50
@@ -77,7 +78,25 @@ object Form1: TForm1
       ParentBackground = False
       ParentFont = False
       TabOrder = 1
-      OnClick = Panel2Click
+      OnClick = bbCloseClick
+    end
+    object bbExitMenu: TPanel
+      Left = 591
+      Top = 15
+      Width = 50
+      Height = 50
+      Anchors = [akTop, akRight]
+      Caption = #1061
+      Color = clGreen
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -29
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 2
+      OnClick = bbExitMenuClick
     end
   end
 end

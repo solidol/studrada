@@ -2,7 +2,8 @@ program voting;
 
 uses
   Vcl.Forms,
-  mainform in 'mainform.pas' {Form1};
+  mainform in 'mainform.pas' {fmMain},
+  configform in 'configform.pas' {fmConf};
 
 {$R *.res}
 
@@ -10,6 +11,7 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.Title := 'Студвибори';
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfmMain, fmMain);
+  Application.CreateForm(TfmConf, fmConf);
   Application.Run;
 end.

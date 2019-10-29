@@ -7,13 +7,16 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TfmMain = class(TForm)
     Label1: TLabel;
     pnServiceMenu: TPanel;
-    Panel1: TPanel;
-    Panel2: TPanel;
+    bbConfigure: TPanel;
+    bbClose: TPanel;
+    bbExitMenu: TPanel;
     procedure FormKeyPress(Sender: TObject; var Key: Char);
-    procedure Panel2Click(Sender: TObject);
+    procedure bbCloseClick(Sender: TObject);
+    procedure bbExitMenuClick(Sender: TObject);
+    procedure bbConfigureClick(Sender: TObject);
   private
     { Private declarations }
     buffer: string;
@@ -22,14 +25,16 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fmMain: TfmMain;
 
 
 implementation
+Uses
+  configform;
 
 {$R *.dfm}
 
-procedure TForm1.FormKeyPress(Sender: TObject; var Key: Char);
+procedure TfmMain.FormKeyPress(Sender: TObject; var Key: Char);
 const
   ENTER=13;
 begin
@@ -49,9 +54,20 @@ else
   end;
 end;
 
-procedure TForm1.Panel2Click(Sender: TObject);
+procedure TfmMain.bbCloseClick(Sender: TObject);
 begin
 Close;
+end;
+
+procedure TfmMain.bbConfigureClick(Sender: TObject);
+begin
+fmMain.FormStyle:=fsNormal;
+fmConf.ShowModal;
+end;
+
+procedure TfmMain.bbExitMenuClick(Sender: TObject);
+begin
+pnServiceMenu.Visible:=false;
 end;
 
 end.
